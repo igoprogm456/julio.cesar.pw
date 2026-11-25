@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação: Júlio César</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Avaliação de Júlio César</h1>
+        <p>Teste seus conhecimentos sobre Júlio César</p>
+    </header>
+
+    <main class="container">
+        <div id="status-aviso" class="aviso-bloqueio" style="display: none;">
+            <h2>Teste já realizado!</h2>
+            <p>Você já concluiu esta avaliação anteriormente. Veja abaixo o seu resultado final.</p>
+        </div>
+
+        <form id="quiz-form">
+            <div class="box question-box">
+                <h2>Questão 1</h2>
+                <p>Durante seu tempo no poder, Júlio César implementou algumas reformas, sendo elas:</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="A"> A) Criação de um sistema democrático de votação, abolição da escravidão, expansão militar e criação de novas províncias.</label>
+                    <label><input type="radio" name="q1" value="B"> B) Reforma religiosa, criação de um sistema de comércio marítimo, fortalecimento da monarquia e redução do poder do Senado.</label>
+                    <label><input type="radio" name="q1" value="C"> C) Unificação das leis provinciais, criação de um exército permanente, expansão do comércio com o Oriente e substituição do Senado por representantes populares.</label>
+                    <label><input type="radio" name="q1" value="D"> D) Calendário Juliano, redistribuição de terras e dívidas, expansão da cidadania romana, reforma no Senado, mudança no sistema de impostos, obras públicas e segurança e controle de excessos.</label>
+                </div>
+            </div>
+
+            <div class="box question-box">
+                <h2>Questão 2</h2>
+                <p>O primeiro triunvirato era formado por _________ e tinha como motivo principalmente:</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="A"> A) Pompeu, Cícero e Crasso, com o objetivo de estabelecer uma nova forma de governo e diminuir os conflitos entre as províncias.</label>
+                    <label><input type="radio" name="q2" value="B"> B) Júlio César, Marco Crasso e Pompeu, com o objetivo principal de unir forças para obter controle político de Roma.</label>
+                    <label><input type="radio" name="q2" value="C"> C) Júlio César, Sula e Pompeu, com o objetivo de restaurar o poder da monarquia e enfraquecer a influência dos senadores.</label>
+                    <label><input type="radio" name="q2" value="D"> D) Júlio César, Otávio Augusto e Marco Antônio, com o objetivo de expandir o território romano e fortalecer o exército.</label>
+                </div>
+            </div>
+          
+            <div class="box question-box">
+                <h2>Questão 3</h2>
+                <p>A aliança com Cleópatra tinha como o objetivo mútuo:</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="A"> A) Apoiar a volta de Cleópatra ao trono egípcio e ampliar a influência romana na região.</label>
+                    <label><input type="radio" name="q3" value="B"> B) Garantir a independência total do Egito e impedir qualquer influência romana sobre o território.</label>
+                    <label><input type="radio" name="q3" value="C"> C) Criar uma aliança militar contra Pompeu e conquistar territórios na região da Grécia e da Ásia Menor.</label>
+                    <label><input type="radio" name="q3" value="D"> D) Estabelecer uma rota comercial entre Egito e Roma, com o objetivo de fortalecer o comércio de especiarias e reduzir impostos.</label>
+                </div>
+            </div>
+
+            <div class="box question-box">
+                <h2>Questão 4</h2>
+                <p>Júlio César foi assassinado nos idos de março por um grupo de senadores, principal motivo era:</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="A"> A) A insatisfação dos senadores com as reformas econômicas de César e sua aproximação com os comerciantes romanos.</label>
+                    <label><input type="radio" name="q4" value="B"> B) A disputa pelo controle das legiões romanas e o descontentamento dos militares com a distribuição de terras.</label>
+                    <label><input type="radio" name="q4" value="C"> C) A tentativa de impedir que César estabelecesse novas alianças políticas com os reinos do Egito e da Ásia Menor.</label>
+                    <label><input type="radio" name="q4" value="D"> D) O medo de que Júlio César concentrasse poder excessivo, ameaçando a República Romana e abrindo caminho para o retorno do império.</label>
+                </div>
+            </div> 
+            <div class="box question-box">
+                <h2>Questão 5</h2>
+                <p>Uma das principais mudanças de Júlio César em suas reformas foi a mudança no sistema de impostos, que:</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="A"> A) Aumentou os impostos cobrados das províncias para financiar novas campanhas militares e expandir o exército romano.</label>
+                    <label><input type="radio" name="q5" value="B"> B) Transferiu a responsabilidade da cobrança de impostos para o Senado, centralizando a arrecadação em Roma.</label>
+                    <label><input type="radio" name="q5" value="C"> C) Devolveu às próprias cidades provinciais a responsabilidade de coletar seus tributos, buscando evitar corrupção.</label>
+                    <label><input type="radio" name="q5" value="D"> D) Substituiu os impostos provinciais por uma taxa única, aplicada igualmente a todos os cidadãos romanos.</label>
+                </div>
+            </div>
+              
+            <div class="box submit-box">
+                <button type="submit" id="botao-enviar" class="botao-link">Enviar Respostas</button>
+            </div>
+        </form>
+
+        <div id="resultado-container" class="box resultado-box" style="display: none;">
+            <h2>Resultado da Avaliação</h2>
+            <p id="texto-nota" class="texto-nota"></p>
+            <div class="botoes-acao">
+                <a href="index.html" class="botao-link">Voltar para a Página Principal</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="lower">
+        <h3>Júlio César</h3>
+        <p>Criado por <a href="https://github.com/igoprogm456">Iago Fortes</a>, <a href="https://github.com/jacon3ly">Renan Jaconely</a>, <a href="https://github.com/dorian55pp">Dorian Alexsander</a>, Vitor Hugo<br>2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
